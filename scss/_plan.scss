@@ -1,0 +1,161 @@
+.plan {
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+#yearPlan {
+    display: none;
+}
+
+.plan-header {
+    width: 100%;
+
+    .plan-title {
+        color: #fff;
+    }
+
+    .plan-text {
+        color: #888;
+    }
+
+    .plan-btns {
+        padding: 10px;
+        border: 1px solid #262626;
+        border-radius: 10px;
+        background-color: #0f0f0f;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .plan-btn {
+            border: none;
+            border-radius: 10px;
+            background-color: #0f0f0f;
+            color: #888;
+            padding: 12px 16px 12px 16px;
+            cursor: pointer;
+        }
+
+        .plan-btn:hover {
+            background-color: #262626;
+            transition: all .5s ease-in-out;
+        }
+
+        .plan-btn:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+}
+
+.plan-btn.active {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.plan-cards-container {
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .plan-card-item {
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #1a1a1a;
+        border: 1px solid #262626;
+        margin-top: 15px;
+
+        .plan-card-name {
+            color: #fff;
+        }
+
+        .plan-card-text {
+            color: #888;
+        }
+
+        .plan-card-price {
+            color: #fff;
+
+            .plan-card-period {
+                color: #888;
+            }
+        }
+
+        .plan-card-btns {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            
+            .plan-start-btn {
+                padding: 15px;
+                border: 1px solid #262626;
+                border-radius: 10px;
+                color: #fff;
+                background-color: #0f0f0f;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .plan-start-btn:hover {
+                background-color: #262626;
+                transition: all .5s ease-in-out;
+            }
+
+            .plan-choose-btn {
+                padding: 12px;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                background-color: #E50000;
+                cursor: pointer;
+            }
+
+            .plan-choose-btn:hover {
+                background-color: #FF3333;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+
+    .plan {
+        width: calc(100% - 40px);
+    }
+
+    .plan-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .plan-header-title {
+            width: 70%;
+        }
+    }
+
+    .plan-btns {
+        width: auto;
+    }
+
+    .plan-cards-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plan-card-item {
+        width: 33.33333%;
+    }
+
+    .plan-card-item:not(:last-child) {
+        margin-right: 20px;
+    }
+}

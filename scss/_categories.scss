@@ -1,0 +1,122 @@
+.categories {
+    margin-top: 350px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+}
+
+.categories-heading {
+   text-align: center;
+    width: 100%;
+
+}
+
+.categories-name {
+    color: #fff;
+    font-size: 24px;
+}
+
+.categories-subtitle {
+    text-align: center;
+    color: #888888;
+}
+
+.indicators {
+    display: none;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator:not(:last-child) {
+    margin-right: 5px;
+}
+
+#prev {
+    margin-right: 10px;
+    background-color: #141414;
+    border: none;
+    cursor: pointer;
+}
+
+#next {
+    margin-left: 10px;
+    background-color: #141414;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.slide {
+    width: 20%;
+    padding: 15px 20px;
+    background-color: #1d1c1c;
+    border-radius: 12px;
+    margin: 0 20px;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+.slide-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.active-indicator {
+    background: #E50000;
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .categories {
+        margin-top: 100px;
+    }
+
+    .indicators {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .categories-name {
+        text-align: left;
+    }
+
+    .categories-subtitle {
+        text-align: left;
+        width: 80%;
+    }
+}

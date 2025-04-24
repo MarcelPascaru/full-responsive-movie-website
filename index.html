@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="./scss/main.css">
     <title>StreamVibe</title>
 </head>
@@ -20,7 +22,7 @@
                 </div>
                 <ul class="navigation-links">
                     <li class="navigation-link active-btn"><a href="#">Home</a></li>
-                    <li class="navigation-link"><a href="#">Movie&Shows</a></li>
+                    <li class="navigation-link"><a href="./movies.html">Movie&Shows</a></li>
                     <li class="navigation-link"><a href="#">Support</a></li>
                     <li class="navigation-link"><a href="#">Subscription</a></li>
                 </ul>
@@ -97,7 +99,655 @@
         </div>
     </header>
 
+    <!-- categories section  -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-heading">
+                <div class="categories-text-heading">
+                    <h1 class="categories-name">Explore our wide variety of categories</h1>
+                    <p class="categories-subtitle">
+                        Whether you're looking for a comedy to make you laugh, a drama to make you think, or a
+                        documentary to learn something new. </p>
+                </div>
+                <div class="indicators">
+                    <button id="prev" class="btn-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg>
+                    </button>
+                    <div class="indicator active-indicator" data-index="0"></div>
+                    <div class="indicator" data-index="1"></div>
+                    <div class="indicator" data-index="2"></div>
+                    <button id="next" class="btn-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./assets/card1.png" alt="card1" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Action</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card2.png" alt="card2" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Adventure</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card3.png" alt="card3" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Comedy</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card4.png" alt="card4" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Drama</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card5.png" alt="card5" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Horror</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card1.png" alt="card1" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Fantasy</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card2.png" alt="card2" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Documentary</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card3.png" alt="card3" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Thriler</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card4.png" alt="card4" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Animation</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/card5.png" alt="card5" class="slide-img">
+                    <div class="slide-content">
+                        <h3 class="slide-name">Sport</h3>
+                        <span class="slide-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section devices  -->
+    <section class="devices">
+        <div class="container">
+            <div class="devices-heading">
+                <h2 class="devices-name">
+                    We Provide you streaming experience across various devices.
+                </h2>
+                <p class="devices-subtitle">
+                    With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is
+                    designed to be compatible with a wide range of devices, ensuring that you never miss a moment of
+                    entertainment.
+                </p>
+            </div>
+            <div class="devices-container">
+                <div class="device-card">
+                    <div class="device-card-heading">
+                        <img src="./assets/Icon1.png" alt="icon1" class="device-icon">
+                        <h3 class="device-card-name">Smartphones</h3>
+                    </div>
+                    <p class="device-card-text">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the
+                        Google Play Store or the Apple App Store.
+                    </p>
+                </div>
+                <div class="device-card">
+                    <div class="device-card-heading">
+                        <img src="./assets/Icon2.png" alt="icon2" class="device-icon">
+                        <h3 class="device-card-name">Tablet</h3>
+                    </div>
+                    <p class="device-card-text">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the
+                        Google Play Store or the Apple App Store.
+                    </p>
+                </div>
+                <div class="device-card">
+                    <div class="device-card-heading">
+                        <img src="./assets/Icon3.png" alt="icon3" class="device-icon">
+                        <h3 class="device-card-name">Smart TV</h3>
+                    </div>
+                    <p class="device-card-text">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the
+                        Google Play Store or the Apple App Store.
+                    </p>
+                </div>
+                <div class="device-card">
+                    <div class="device-card-heading">
+                        <img src="./assets/Icon4.png" alt="icon4" class="device-icon">
+                        <h3 class="device-card-name">Laptops</h3>
+                    </div>
+                    <p class="device-card-text">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the
+                        Google Play Store or the Apple App Store.
+                    </p>
+                </div>
+                <div class="device-card">
+                    <div class="device-card-heading">
+                        <img src="./assets/Icon5.png" alt="icon5" class="device-icon">
+                        <h3 class="device-card-name">Gaming Consoles</h3>
+                    </div>
+                    <p class="device-card-text">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the
+                        Google Play Store or the Apple App Store.
+                    </p>
+                </div>
+                <div class="device-card">
+                    <div class="device-card-heading">
+                        <img src="./assets/Icon6.png" alt="icon6" class="device-icon">
+                        <h3 class="device-card-name">VR Headseats</h3>
+                    </div>
+                    <p class="device-card-text">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the
+                        Google Play Store or the Apple App Store.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section questions  -->
+    <section class="questions">
+        <div class="container">
+            <div class="questions-heading-container">
+                <div class="questions-heading">
+                    <h2 class="questions-name">Frequently Asked Questions</h2>
+                    <p class="questions-subtitle">
+                        Got questions? We've got answers! Check out our FAQ section to find answers to the most common
+                        questions about StreamVibe.
+                    </p>
+                </div>
+                <button class="questions-btn">
+                    Ask a Questions
+                </button>
+            </div>
+
+            <div class="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">01</span>
+                            <h2 class="accordion-name">
+                                What is StreamVibe?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">02</span>
+                            <h2 class="accordion-name">
+                                How much does StreamVibe cost?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">03</span>
+                            <h2 class="accordion-name">
+                                What content is avaible on StreamVibe?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">04</span>
+                            <h2 class="accordion-name">
+                                How can I watch StreamVibe?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">05</span>
+                            <h2 class="accordion-name">
+                                How do I sign up for StreamVibe?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">06</span>
+                            <h2 class="accordion-name">
+                                What is the StreamVibe free trial?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">07</span>
+                            <h2 class="accordion-name">
+                                How do I contact StreamVibe customer support?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title">
+                            <span class="accordion-num">08</span>
+                            <h2 class="accordion-name">
+                                What are the StreamVibe payment methods?
+                            </h2>
+                        </div>
+                        <span class="icon">➕</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>This is the hidden content of the accordion. It will slide down when opened.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- plan section  -->
+    <section class="plan">
+        <div class="container">
+            <div class="plan-header">
+                <div class="plan-header-title">
+                    <h1 class="plan-title">Choose the plan that's right for you</h1>
+                    <p class="plan-text">
+                        Join StreamVibe and select from our flexible subscription options tailored to suit your viewing
+                        preferences. Get ready for non-stop entertainment!
+                    </p>
+                </div>
+                <div class="plan-btns">
+                    <button id="monthly" class="plan-btn">Monthly</button>
+                    <button id="yearly" class="plan-btn">Yearly</button>
+                </div>
+            </div>
+
+            <!-- monthly plan  -->
+            <div class="plan-cards-container" id="monthPlan">
+                <div class="plan-card-item">
+                    <h2 class="plan-card-name">Basic</h2>
+                    <p class="plan-card-text">
+                        Enjoy an extensive library of movies and shows, featuring a range of content, including recently
+                        released titles.
+                    </p>
+                    <h3 class="plan-card-price">
+                        $9.99
+                        <span class="plan-card-period">
+                            /month
+                        </span>
+                    </h3>
+                    <div class="plan-card-btns">
+                        <button class="plan-start-btn">Start Free Trial</button>
+                        <button class="plan-choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+
+                <div class="plan-card-item">
+                    <h2 class="plan-card-name">Standard Plan</h2>
+                    <p class="plan-card-text">
+                        Enjoy an extensive library of movies and shows, featuring a range of content, including recently
+                        released titles.
+                    </p>
+                    <h3 class="plan-card-price">
+                        $12.99
+                        <span class="plan-card-period">
+                            /month
+                        </span>
+                    </h3>
+                    <div class="plan-card-btns">
+                        <button class="plan-start-btn">Start Free Trial</button>
+                        <button class="plan-choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+
+                <div class="plan-card-item">
+                    <h2 class="plan-card-name">Premium Plan</h2>
+                    <p class="plan-card-text">
+                        Access to a widest selection of movies and shows, including all new releases and Offline Viewing
+                    </p>
+                    <h3 class="plan-card-price">
+                        $14.99
+                        <span class="plan-card-period">
+                            /month
+                        </span>
+                    </h3>
+                    <div class="plan-card-btns">
+                        <button class="plan-start-btn">Start Free Trial</button>
+                        <button class="plan-choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- yearly plan  -->
+            <div class="plan-cards-container" id="yearPlan">
+                <div class="plan-card-item">
+                    <h2 class="plan-card-name">Basic</h2>
+                    <p class="plan-card-text">
+                        Enjoy an extensive library of movies and shows, featuring a range of content, including recently
+                        released titles.
+                    </p>
+                    <h3 class="plan-card-price">
+                        $89.99
+                        <span class="plan-card-period">
+                            /year
+                        </span>
+                    </h3>
+                    <div class="plan-card-btns">
+                        <button class="plan-start-btn">Start Free Trial</button>
+                        <button class="plan-choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+
+                <div class="plan-card-item">
+                    <h2 class="plan-card-name">Standard Plan</h2>
+                    <p class="plan-card-text">
+                        Enjoy an extensive library of movies and shows, featuring a range of content, including recently
+                        released titles.
+                    </p>
+                    <h3 class="plan-card-price">
+                        $139.99
+                        <span class="plan-card-period">
+                            /year
+                        </span>
+                    </h3>
+                    <div class="plan-card-btns">
+                        <button class="plan-start-btn">Start Free Trial</button>
+                        <button class="plan-choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+
+                <div class="plan-card-item">
+                    <h2 class="plan-card-name">Premium Plan</h2>
+                    <p class="plan-card-text">
+                        Access to a widest selection of movies and shows, including all new releases and Offline Viewing
+                    </p>
+                    <h3 class="plan-card-price">
+                        $159.99
+                        <span class="plan-card-period">
+                            /year
+                        </span>
+                    </h3>
+                    <div class="plan-card-btns">
+                        <button class="plan-start-btn">Start Free Trial</button>
+                        <button class="plan-choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bottom image section  -->
+     <section class="bottom-image">
+        <div class="container">
+            <div class="background-img">
+                <div class="background-img-text">
+                    <h1 class="bg-img-title">Start your free trial<br/> today!</h1>
+                    <p class="bg-img-subtitle">
+                        This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.
+                    </p>
+                </div>
+                <button class="bg-img-btn">Start a Free Trial</button>
+            </div>
+        </div>
+     </section>
+
+     <!-- footer section  -->
+      <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-item">
+                    <h1 class="footer-heading">
+                        Home
+                    </h1>
+                    <ul>
+                        <li>Categories</li>
+                        <li>Devices</li>
+                        <li>Prices</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h1 class="footer-heading">
+                        Movies
+                    </h1>
+                    <ul>
+                        <li>Genres</li>
+                        <li>Trending</li>
+                        <li>New Release</li>
+                        <li>Popular</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h1 class="footer-heading">
+                        Shows
+                    </h1>
+                    <ul>
+                        <li>Genres</li>
+                        <li>Trending</li>
+                        <li>New Release</li>
+                        <li>Popular</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h1 class="footer-heading">
+                        Support
+                    </h1>
+                    <ul>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h1 class="footer-heading">
+                        Subscription
+                    </h1>
+                    <ul>
+                        <li>Plans</li>
+                        <li>Features</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h1 class="footer-heading">
+                        Connect With Us
+                    </h1>
+                    <ul class="social-links">
+                        <li class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </li>
+                        <li class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                            </svg>
+                        </li>
+                        <li class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-line"></div>
+      </footer>
+
+      <!-- privacy section  -->
+       <section class="privacy">
+        <div class="container">
+           <div class="sub-footer">
+            <div>
+                @2023 streamvib, All Rights Reserved
+            </div>
+            <div class="terms">
+                <span>Terms of Use</span>
+                <span>Privacy Policy</span>
+                <span>Cookie Policy</span>
+            </div>
+           </div>
+        </div>
+       </section>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+
     <script src="./script.js"></script>
+    <script src="./api-resource.js"></script>
 
 </body>
 

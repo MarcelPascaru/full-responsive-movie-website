@@ -44,6 +44,7 @@
 
 .bi-search {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .bi-bell {
@@ -105,7 +106,6 @@
     background-color: #a10202;
     transition: all 0.55s ease-in;
 }
-
 
 @media only screen and (min-width: 768px) {
     .navigation-bar {
